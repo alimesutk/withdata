@@ -12,5 +12,9 @@
 ```sh
     $ docker start | stop <container id> [ <container id2> <container id3> ...]
 ```
-  
 
+
+### How to connect PostgreDB?
+
+
+  ![alt text](https://github.com/alimesutk/withdata/blob/master/postgre_ide_connection.png?raw=true)
