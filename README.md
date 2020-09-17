@@ -18,3 +18,9 @@
 
 
   ![alt text](https://github.com/alimesutk/withdata/blob/master/postgre_ide_connection.png?raw=true)
+
+
+
+## REFERENCES:
+
+https://linuxhint.com/postgresql_docker/
