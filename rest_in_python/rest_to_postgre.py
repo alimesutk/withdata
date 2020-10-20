@@ -1,7 +1,7 @@
 # importing the libraries
 import requests #http request library
 import psycopg2 #postgre connection library
-from rest_in_python import secrets
+import secrets
 
 # connecting postgre
 connection = psycopg2.connect(user = secrets.pg_user, password = secrets.pg_password,

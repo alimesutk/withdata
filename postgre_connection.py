@@ -1,5 +1,5 @@
 import psycopg2
-from rest_in_python import secrets
+import secrets
 
 connection = psycopg2.connect(user = secrets.pg_user, password = secrets.pg_password,
                               host = "127.0.0.1", port = "5432", database = "postgres")
