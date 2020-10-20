@@ -8,7 +8,7 @@
     $ docker-compose -f postgre_compose.yml up | down
 ```
   for start/stop container : 
-  
+
 ```sh
     $ docker start | stop <container id> [ <container id2> <container id3> ...]
 ```
