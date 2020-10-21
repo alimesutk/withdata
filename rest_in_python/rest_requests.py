@@ -1,7 +1,6 @@
 # Import libraries
 import requests
 
-
 ### GET SAMPLES ###
 
 URL = "https://jsonplaceholder.typicode.com/users"
@@ -40,7 +39,6 @@ files = {'file': open('selam.json', 'rb')}
 r_post = requests.post(url=URL, files=files)
 print(r_post.status_code)
 print(r_post.content)  # To see the change
-print('\n*********************\n')
 
 # SAMPLE 3 : Posts json variable data POST to typicode service.
 URL = "https://jsonplaceholder.typicode.com/posts"
@@ -48,6 +46,7 @@ p_value = '{"userId":1,"id":101,"title":"blog diaries","body":"RIP 2nd post inse
 r_post = requests.post(url=URL, data=p_value)
 print(r_post.status_code)
 print(r_post.content)
+print('\n*********************\n')
 
 ### PATCH SAMPLES ###
 
@@ -57,6 +56,7 @@ u_value = '{"email":"ali@mesut.com","address":{"city":"Diyarbakir"}}'
 r_patch= requests.patch(url=URL, data=u_value)
 print(r_patch.status_code)
 print(r_patch.content)  # To see the change
+print('\n*********************\n')
 
 # SAMPLE 2 : PATCH request fantasy method :)
 URL = "https://jsonplaceholder.typicode.com/users/2"
@@ -82,7 +82,6 @@ URL = "https://jsonplaceholder.typicode.com/users/2"
 u_value = '{"email":"ali@mesut.com","address":{"city":"Diyarbakir"}}'
 r_put = requests.put(url=URL, data=u_value)
 print(r_put.status_code)
-print(r_put.content)  # To see the change
 print('\n*********************\n')
 
 ### DELETE SAMPLES ###
