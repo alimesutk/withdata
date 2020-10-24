@@ -22,7 +22,7 @@ for p in data:
     userId = p['userId']
     albumId = p['id']
     title = p['title']
-    # print(str(userId) + '\t' + str(id) + '\t' + str(title))
+    # print(str(userId) + '\t' + str(albumId) + '\t' + str(title))
     cursor.execute("INSERT INTO typicode.albums (userid, id, title) VALUES ('%d','%d','%s')" % (userId, albumId, title))
     connection.commit()
 cursor.close()
