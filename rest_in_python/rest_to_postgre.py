@@ -1,11 +1,11 @@
 # Import libraries
 import requests  # http request library
 import psycopg2  # postgre connection library
-import secrets  # project secrets file
+import rest_in_python.secrets as secrets  # project secrets file
 
 # Connecting to PostgreDB
 connection = psycopg2.connect(user=secrets.pg_user, password=secrets.pg_password,
-                              host="127.0.0.1", port="5432", database="postgres")
+                              host=secrets.pg_host, port=secrets.pg_port, database=secrets.pg_database)
 cursor = connection.cursor()
 
 # API-Endpoint

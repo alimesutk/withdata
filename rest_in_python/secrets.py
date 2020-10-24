@@ -1,0 +1,5 @@
+pg_user = "admin"
+pg_password = "secret"
+pg_host = "127.0.0.1"
+pg_port = "5432"
+pg_database = "postgres"
