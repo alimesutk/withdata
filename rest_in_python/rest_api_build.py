@@ -90,6 +90,7 @@ def home():
 def api_all():
     return jsonify(users)
 
+
 @app.route('/api/v1/resources/users', methods=['GET'])
 def api_id():
     # Check if an ID was provided as part of the URL.
@@ -112,5 +113,6 @@ def api_id():
     # Use the jsonify function from Flask to convert our list of
     # Python dictionaries to the JSON format.
     return jsonify(results)
+
 
 app.run()
