@@ -7,6 +7,7 @@ Base = declarative_base()
 Session = sessionmaker(bind=engine)
 session = Session()
 
+
 class AlbumsModel(Base):
     """Data model albums."""
     __tablename__ = 'albums'
@@ -21,7 +22,7 @@ class AlbumsModel(Base):
 Base.metadata.create_all(engine)
 
 # DROP TABLE
-#Base.metadata.drop_all(engine)
+Base.metadata.drop_all(engine)
 
 # SELECT (GET)
 result = session.query(AlbumsModel).filter(AlbumsModel.userid == 3)
@@ -37,8 +38,7 @@ session.query(AlbumsModel).filter(AlbumsModel.userid == 2).update({AlbumsModel.i
 session.query(AlbumsModel).filter(AlbumsModel.userid == 2).delete()
 
 # DELETE ALL
-#session.query(AlbumsModel).delete()
-
+session.query(AlbumsModel).delete()
 
 # Query Samples
 print('\n', session.query(AlbumsModel).options())
